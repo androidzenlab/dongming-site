@@ -43,7 +43,7 @@ export default async function Post(props: Params) {
           <PostBody content={content} />
           <div className="sm:mx-0 flex justify-center ">            
             <Image
-              src={`${process.env.BASE_PATH}/post.ogImage.url`}
+              src={`${process.env.BASE_PATH}/${post.ogImage.url}`}
               alt={`post Image for ${post.title}`}
               className={"shadow-sm object-center"}
               width={100}

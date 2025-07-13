@@ -15,16 +15,16 @@ function getBackgroundImage(srcSet = '') {
 }
 
 export default function Hero() {
-  const {
-    props: { srcSet },
-  } = getImageProps({ alt: '', width: 1000, height: 760, src: `${process.env.BASE_PATH}/hero-background.avif`})
-    const {
-    props
-  } = getImageProps({ alt: '', width: 1000, height: 760, src: `${process.env.BASE_PATH}/hero-background.avif`})
-  const backgroundImage = getBackgroundImage(props.src)
-    console.log('props props is', props)
-        console.log('srcSet props is', srcSet)
-  console.log('backgroundImage is', backgroundImage)
+  // const {
+  //   props: { srcSet },
+  // } = getImageProps({ alt: '', width: 1000, height: 760, src: `${process.env.BASE_PATH}/hero-background.avif`})
+  //   const {
+  //   props
+  // } = getImageProps({ alt: '', width: 1000, height: 760, src: `${process.env.BASE_PATH}/hero-background.avif`})
+  // const backgroundImage = getBackgroundImage(props.src)
+  //   console.log('props props is', props)
+  //       console.log('srcSet props is', srcSet)
+  // console.log('backgroundImage is', backgroundImage)
 
   return (
     <section className="text-center my-32 mx-4 sm:mx-8 md:mx-16 lg:mx-24" style={{
@@ -35,13 +35,13 @@ export default function Hero() {
       height: '50vh', // Optional: Set a height
     }}>
 
-<Image
+{/* <Image
         src={`${process.env.BASE_PATH}/hero-desktop.png`}
         width={1000}
         height={760}
         className="hidden md:block"
         alt="Screenshots of the dashboard project showing desktop version"
-      />
+      /> */}
       <h1 className="font-sans text-3xl tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl dark:text-white mb-6">
         Wellington Dongming Traditional Chinese Manipulative Orthopaedics and Massage Clinic 
       </h1>
