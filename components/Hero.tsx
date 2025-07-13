@@ -1,7 +1,5 @@
 import Link from "next/link";
 // import Background from '/hero-background.avif';
-import { getImageProps } from 'next/image'
-import Image from "next/image";
 function getBackgroundImage(srcSet = '') {
   console.log('getBackgroundImage', srcSet)
   const imageSet = srcSet
@@ -15,16 +13,6 @@ function getBackgroundImage(srcSet = '') {
 }
 
 export default function Hero() {
-  // const {
-  //   props: { srcSet },
-  // } = getImageProps({ alt: '', width: 1000, height: 760, src: `${process.env.BASE_PATH}/hero-background.avif`})
-  //   const {
-  //   props
-  // } = getImageProps({ alt: '', width: 1000, height: 760, src: `${process.env.BASE_PATH}/hero-background.avif`})
-  // const backgroundImage = getBackgroundImage(props.src)
-  //   console.log('props props is', props)
-  //       console.log('srcSet props is', srcSet)
-  // console.log('backgroundImage is', backgroundImage)
 
   return (
     <section className="text-center my-32 mx-4 sm:mx-8 md:mx-16 lg:mx-24" style={{
