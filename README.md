@@ -117,9 +117,3 @@ git add . && git commit -m "initial commit" && git push
 You should see your site deployed to GitHub Pages in a few minutes. 🚀
 
 ---
-
-## Wrap up
-
-Thanks for reading and I hope this helps. If you noticed someting wrong, please [open an issue](https://github.com/gregrickaby/nextjs-github-pages/issues). Cheers! 🍻
-
----
