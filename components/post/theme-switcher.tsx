@@ -4,6 +4,7 @@ import styles from "./switch.module.css";
 import { memo, useEffect, useState } from "react";
 
 declare global {
+  // eslint-disable-next-line no-var
   var updateDOM: () => void;
 }
 
@@ -69,6 +70,7 @@ const Switch = () => {
     updateDOM = window.updateDOM;
     /** Sync the tabs */
     addEventListener("storage", (e: StorageEvent): void => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       e.key === STORAGE_KEY && setMode(e.newValue as ColorSchemePreference);
     });
   }, []);
@@ -92,6 +94,7 @@ const Switch = () => {
   );
 };
 
+// eslint-disable-next-line react/display-name
 const Script = memo(() => (
   <script
     dangerouslySetInnerHTML={{
